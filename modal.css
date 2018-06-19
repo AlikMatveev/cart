@@ -1,0 +1,56 @@
+*{
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+a{
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease-in-out;
+  z-index: 10000;
+}
+.modal-container{
+  border-radius: 5px;
+  margin: 0 20px;
+  padding: 10px;
+  position: relative;
+  min-width: 300px;
+  overflow: auto;
+}
+.modal-container__header{
+  margin-bottom: 30px;
+}
+.close{
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 25px;
+  user-select: none;
+  cursor: pointer;
+}
+.open{
+  display: flex;
+  transition: all 0.7s ease-in-out;
+}
